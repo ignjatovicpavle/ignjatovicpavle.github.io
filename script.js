@@ -24,10 +24,11 @@ const appearOpt = {
 const appearFun = new IntersectionObserver(function(entries, appearFun){
     entries.forEach(entry => {
         if (!entry.isIntersecting){
+            entry.target.classList.remove('appear')
             return
         } else {
             entry.target.classList.add('appear')
-            appearFun.unobserve(entry.target)
+            //appearFun.unobserve(entry.target)
         }
     })
 }, appearOpt)
