@@ -133,13 +133,17 @@ html, body {
     font-weight: 400;
 }
 
-.about h2:hover, .all h1:hover{
+/*.about h2:hover, .all h1:hover{
     letter-spacing: 3px;
     cursor: pointer;
-}
+}*/
 
 .about a{
     text-decoration: none;
+}
+
+.about a:hover h2{
+    transform: translateX(10%);
 }
 
 
@@ -607,7 +611,7 @@ form button{
 }
 
 .langchng{
-    padding: 7px;
+    padding-bottom: 0;
     background-color: transparent;
     color: #ffffff;
     font-size: 20px;
@@ -632,13 +636,30 @@ form button{
         top: 15px;
         right: 0;
     }
+}
 
+.langchng a{
+    transition: all 0.5s ease-in-out;
+}
+
+.langchng a img{
+    border-radius: 1.5px;
 }
 
 .langchng:hover{
     cursor: pointer;
     color: #777;
 }
+
+.langchng:has(a:hover) a:not(:hover){
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+.langchng:has(a:hover) a{
+    transform: scale(1.1);
+}
+
 
 .gall{
     width: 100%;
