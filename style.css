@@ -86,7 +86,7 @@ html, body {
     }
 }
 
-.box{
+.aboutbox{
     height: 100vh;
     transition: all 1s ease-in-out;
 }
@@ -563,10 +563,6 @@ form button{
 .from-right{
     transform: translateX(50%);
 }
-
-/*.from-left, .from-right{
-    transition: transform 1s ease-in-out;
-}*/
 
 
 

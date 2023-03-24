@@ -1,4 +1,38 @@
 
+//Preload animation
+
+let time = 0
+var timecounter = setInterval(function() {
+    time += 1
+}, 1000)
+
+function loaded(){
+    loader.classList.add('remove')
+    document.getElementById('main').style.display = 'block'
+    document.getElementById('main').classList.add('appear')
+    var x = setTimeout(() => {
+        loader.style.display = 'none'
+        document.getElementById('main').style.opacity = 1
+    }, 1000);
+}
+
+
+var loader = document.getElementById("preload")
+    window.addEventListener("load", function(){
+        if (time >= 3){
+            loaded()
+            clearInterval(timecounter)
+        } else{
+            var timecounter2 = setInterval(function(){
+                if (time >= 3){
+                    loaded()
+                    clearInterval(timecounter)
+                    clearInterval(timecounter2)
+                }
+            }, 200)
+        }
+    })
+
 var navLinks = document.getElementById("navLinks")
     
 function showmenu(){
