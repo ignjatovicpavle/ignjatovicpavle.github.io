@@ -48,7 +48,7 @@ function hidemenu(){
 }
 
 
-const faders = document.querySelectorAll('.fade-in')
+/*const faders = document.querySelectorAll('.fade-in')
 
 const appearOpt = {
     threshold: 0.2,
@@ -69,4 +69,4 @@ const appearFun = new IntersectionObserver(function(entries, appearFun){
 
 faders.forEach(fader => {
     appearFun.observe(fader)
-})
+})*/

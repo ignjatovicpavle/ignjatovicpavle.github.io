@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/04bf603a0f.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="portrait.jpg">
+    <link rel="shortcut icon" href="images/portrait2.jpg">
     <script src="script.js" defer></script>
     <meta name="google-site-verification" content="JJYCPl3KDRrzTmYid9nzPiemM1iUs34L3Yt7NUEWK_s" />
 </head>
@@ -35,7 +35,7 @@
 
     <main id="main" style="opacity: 0; display: none;">
 
-        <img src="background.png" id="bg">
+        <img src="images/background.png" id="bg">
 
         <svg width="919" height="210" viewBox="0 0 919 210" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_2_23)">
@@ -65,11 +65,12 @@
         
         
             <section class="me">
-                <img src="portrait.jpg" alt="pavle ignjatovic">
+                <img src="images/portrait2.jpg" alt="pavle ignjatovic">
                 <section class="about">
                     <a href="#student"><h2>// Student</h2></a>
                     <a href="#cyclist"><h2>// Cyclist</h2></a>
                     <a href="#developer"><h2>// Front-end developer</h2></a>
+                    <a href="#blog"><h2>// Onlinity Learning editor</h2></a>
                     <a href="#more"><h2>// And more...</h2></a>
                 </section>
             </section>
@@ -79,13 +80,14 @@
             <div class="navlinks" id="navLinks">
                 <i class="fa fa-times" onclick="hidemenu()"></i>
                 <div class="langchng" id="langchng">
-                    <a href="https://pavle.tk/fr/"><img src="france.png"></a>
-                    <a href="https://pavle.tk/sr/"><img src="serbia.png"></a>
+                    <a href="https://pavle.tk/fr/"><img src="images/france.png"></a>
+                    <a href="https://pavle.tk/sr/"><img src="images/serbia.png"></a>
                 </div>
                 <ul>
                     <li><a href="#student" onclick="hidemenu()">// STUDENT</a></li>
                     <li><a href="#cyclist" onclick="hidemenu()">// CYCLIST</a></li>
                     <li><a href="#developer" onclick="hidemenu()">// DEVELOPER</a></li>
+                    <li><a href="#blog" onclick="hidemenu()">// EDITOR</a></li>
                     <li><a href="#more" onclick="hidemenu()">// AND MORE</a></li>
                     <li><a href="#contact" onclick="hidemenu()">Contact me</a></li>
                 </ul>
@@ -95,14 +97,14 @@
 
         <div class="x fade-in from-left" id="student">
             <article class="more">
-                <p>I'm a 14-year-old primary school student from Belgrade, Serbia. I enjoy participating in physics, mathematics, chemistry, French competitions, and others.</p>
-                <img src="competition.jpg" alt="competition">
+                <p>I'm a 15-year-old Mathematical High School student from Belgrade, Serbia. I enjoy participating in physics, mathematics, chemistry, French competitions, and others.</p>
+                <img src="images/competition.jpg" alt="competition">
             </article>
         </div>
 
         <div class="x fade-in from-right" id="cyclist">
             <article class="more">
-                <img src="cyclist.jpg" alt="cyclist">
+                <img src="images/cyclist.jpg" alt="cyclist">
                 <p>I use my free time to cycle, not only in Belgrade but also in the Braničevo district. I'm looking forward to many more routes and beautiful landscapes in the future.</p>
                 <a href="https://www.komoot.com/user/1451177442954" target="_blank"><button>See my previous rides</button></a>
             </article>
@@ -119,22 +121,30 @@
             </article>
         </div>
 
-        <div class="x fade-in from-right" id="more">
+        <div class="x fade-in from-right" id="blog"> 
+            <article class="more">
+                <img src="images/Learning logo.svg" alt="Onlinity Learning">
+                <p>I also write interesting articles about nature, science and world on my new website - <b>Onlinity Learning</b>.</p>
+                <a href="https://learning.onlinity.tk/" target="_blank"><button>Check out Onlinity Learning</button></a>
+            </article>
+        </div>
+
+        <div class="x fade-in from-left" id="more">
             <article class="more">
                 <div>
                     <p>I also like playing chess, either live or online, and hope to get better after every game played.</p>
                     <a href="https://www.chess.com/member/pavleignjatovic" target="_blank"><button>Let's play chess!</button></a>
-                    <img src="chess.png">
+                    <img src="images/chess.png">
                 </div>
                 <div>
                     <p>When in nature, I relish capturing great moments by photographing.</p>
                     <a href="https://www.eyeem.com/u/PhotographerPavle/photos" target="_blank"><button>My photography</button></a>
-                    <img src="photo.jpg">
+                    <img src="images/photo.jpg">
                 </div>
             </article>
         </div>
 
-        <div class="x fade-in from-left" id="contact">
+        <div class="x fade-in from-right" id="contact">
             <form action="https://formsubmit.co/pavle.ignjatovic.08@gmail.com" method="POST">
                 <h2>Contact me</h2>
                 <input type="text" name="name" required placeholder="Your name">
