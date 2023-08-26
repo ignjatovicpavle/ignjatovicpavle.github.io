@@ -429,7 +429,7 @@ form button:hover:after {
     }
 
     #student{
-        padding-top: 100px;
+        padding-top: 500px;
     }
 
     .more{
@@ -460,6 +460,7 @@ form button:hover:after {
         font-size: 28px;
         width: 80vw;
         margin: auto;
+        max-width: 90vw;
     }
 
     .buttons{
@@ -484,6 +485,7 @@ form button:hover:after {
     #more .more div img{
         display: none;
     }
+
 }
 
 
