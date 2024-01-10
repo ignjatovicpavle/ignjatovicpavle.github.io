@@ -1,5 +1,5 @@
 
-document.getElementById('gallery').querySelectorAll('img').forEach(element => {
+document.getElementById('allGalleries').querySelectorAll('img').forEach(element => {
     
     let text = element.outerHTML;
     let src = text;
