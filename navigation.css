@@ -1,0 +1,154 @@
+nav, .navlinks{
+    display: none;
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navlinks ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background: rgb(250, 214, 165);
+    margin: auto;
+    border-radius: 1.5px;
+    transition: 0.35s;
+}
+
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+
+@keyframes menuopen{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes menuclose{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+.navlinks ul li{
+    display: block;
+}
+.navlinks{
+    display: none;
+    position: absolute;
+    background-color: rgb(86, 113, 137);
+    color: #fff;
+    height: 100vh;
+    width: 220px;
+    top: 0;
+    right: 0px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+}
+nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.navlinks ul{
+    padding: 30px;
+}
+
+.langchng{
+    padding-bottom: 0;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    margin: 25px;
+    margin-top: 0;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.langchng *{
+    margin: 5px;
+}
+
+@media (width < 500px){
+    .langchng{
+        font-size: 15px;
+        top: 15px;
+        right: 0;
+    }
+}
+
+.langchng a{
+    transition: all 0.5s ease-in-out;
+}
+
+.langchng a img{
+    border-radius: 1.5px;
+}
+
+.langchng:hover{
+    cursor: pointer;
+    color: #777;
+}
+
+.langchng:has(a:hover) a:not(:hover){
+    filter: blur(4px);
+    transform: scale(0.9);
+}
+
+.langchng:has(a:hover) a{
+    transform: scale(1.1);
+}
