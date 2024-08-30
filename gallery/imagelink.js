@@ -1,5 +1,7 @@
 
 document.getElementById('allGalleries').querySelectorAll('img').forEach(element => {
+
+    element.loading = "lazy";
     
     let text = element.outerHTML;
     let src = text;
