@@ -3,18 +3,6 @@
 //Adding first 5 images to slider
 let slidesimages = document.getElementById('allGalleries').querySelectorAll('img');
 
-for (let index = 0; index < 5; index++) {
-    let element = slidesimages[index];
-    let text = element.outerHTML;
-    let imgsrc = text;
-    imgsrc = imgsrc.slice(imgsrc.indexOf('"') + 1);
-    imgsrc = imgsrc.slice(0, imgsrc.indexOf('"'));
-    
-    var image = document.createElement('img');
-    image.src = imgsrc;
-    document.getElementById('slides').appendChild(image)
-}
-
 
 
 
