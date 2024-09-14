@@ -1,5 +1,7 @@
 
 document.getElementById('allGalleries').querySelectorAll('img').forEach(element => {
+
+    element.loading = "lazy";
     
     element.loading = "lazy";
 
