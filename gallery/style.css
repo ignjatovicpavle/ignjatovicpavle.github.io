@@ -429,9 +429,8 @@ span.next:hover, span.prev:hover{
     .slide-container{
         width: 90%;
         height: 30vh;
-        margin-right: 0;
-        margin-left: 0;
-        margin: auto;
+
+        margin: 50px auto auto auto;
     }
 
     .dotsContainer .dot{
@@ -484,6 +483,30 @@ span.next:hover, span.prev:hover{
 
 /*Gallery*/
 
+@media (width < 500px){
+    #allGalleries{
+        margin: auto;
+    }
+    .gallery{
+        width: 100%;
+        margin: auto;
+    }
+
+    .imagediv{
+        width: 100%;
+    }
+
+    .imagediv img{
+        margin: auto 0 auto 0;
+    }
+}
+
+#allGalleries{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -513,12 +536,14 @@ span.next:hover, span.prev:hover{
 
 /*HR style*/
 #allGalleries hr{
+    display: block;
     position: relative;
     outline: 0;
     border: 0;
     color: var(--textcolor);
     text-align: center;
     height: 2.5em;
+    width: 100%;
     opacity: 0.85;
     &:before {
         content: '';
@@ -542,7 +567,13 @@ span.next:hover, span.prev:hover{
         color: var(--textcolor);
         background-color: white;
     }
-  }
+}
+
+@media (width<500px){
+    #allGalleries hr{
+        margin-top: 50px;
+    }
+}
 
 footer{
     width: 100%;
