@@ -8,8 +8,7 @@
     <meta name="keywords" content="pavle, ignjatovic, os stevan dukic, portfolio, pavle ignjatovic, pavle ignjatovic portfolio, matematička gimnazija">
     <meta name="description" content="Welcome on Pavle's portfolio">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="navigation.css">
-    <link id="preloadstyle" rel="stylesheet" href="preload.css">
+    <link rel="stylesheet" href="preload.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -18,8 +17,9 @@
     <script src="script.js" defer></script>
     <meta name="google-site-verification" content="JJYCPl3KDRrzTmYid9nzPiemM1iUs34L3Yt7NUEWK_s" />
 </head>
-<body id="body">
+<body>
 
+    <!-- Preloader -->
     <div id="preload">
         <div class="wrapper">
             <div class="box-wrap">
@@ -33,149 +33,175 @@
         </div>
     </div>
 
-
-    <main id="main" style="opacity: 0; display: none;">
-
-        <div class="aboutbox" id="aboutbox">
-            <div class="all">
-                <a href="https://ignjatovicpavle.github.io/"><h1>Hi, I'm Pavle</h1></a>
-            </div>
-        
-        
-            <section class="me">
-                <img src="images/portrait2.jpg" alt="pavle ignjatovic">
-                <section class="about">
-                    <a href="#student"><h2>// Student</h2></a>
-                    <a href="#cyclist"><h2>// Cyclist</h2></a>
-                    <a href="#developer"><h2>// Front-end developer</h2></a>
-                    <a href="#blog"><h2>// Onlinity Learning editor</h2></a>
-                    <a href="#more"><h2>// And more...</h2></a>
-                </section>
-            </section>
-        </div>
-
-        <nav>
-            <div class="navlinks" id="navLinks">
-                <i class="fa fa-times" onclick="hidemenu()"></i>
-                <div class="langchng" id="langchng">
-                    <a href="https://ignjatovicpavle.github.io/fr/"><img src="images/france.png"></a>
-                    <a href="https://ignjatovicpavle.github.io/sr/"><img src="images/serbia.png"></a>
+    <main>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <a href="#about" class="nav-logo">Pavle Ignjatović</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times close-menu" id="closeMenu"></i>
+                <i class="fa-solid fa-lightbulb" id="themeToggle"></i>
+                <a href="#about">About</a>
+                <a href="#dev">Developer</a>
+                <a href="#photography">Photographer</a>
+                <a href="#cycling">Cyclist</a>
+                <a href="#contact">Contact</a>
+                <div class="langchng">
+                    <a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French"></a>
+                    <a href="#"><img src="https://flagcdn.com/w20/rs.png" alt="Serbian"></a>
                 </div>
-                <ul>
-                    <li><a href="#student" onclick="hidemenu()">// STUDENT</a></li>
-                    <li><a href="#cyclist" onclick="hidemenu()">// CYCLIST</a></li>
-                    <li><a href="#developer" onclick="hidemenu()">// DEVELOPER</a></li>
-                    <li><a href="#blog" onclick="hidemenu()">// EDITOR</a></li>
-                    <li><a href="#more" onclick="hidemenu()">// AND MORE</a></li>
-                    <li><a href="#contact" onclick="hidemenu()">Contact me</a></li>
-                </ul>
             </div>
-            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <i class="fas fa-bars hamburger" id="hamburger"></i>
         </nav>
 
-        <div class="x fade-in from-left" id="student">
-            <article class="more">
-                <p>I'm a 16-year-old Mathematical High School student from Belgrade, Serbia. I enjoy participating in physics, mathematics, astronomy and IT competitions.</p>
-                <img src="images/ijso4.jpg" alt="competition">
-                <a href="achievements/index.html" target="_blank"><button>My achievements</button></a>
-            </article>
-        </div>
-
-        <div class="x fade-in from-right" id="cyclist">
-            <article class="more">
-                <img src="images/cyclist.jpg" alt="cyclist">
-                <p>I use my free time to cycle, not only in Belgrade but also in the Braničevo district. I'm looking forward to many more routes and beautiful landscapes in the future.</p>
-                <a href="https://www.komoot.com/user/1451177442954" target="_blank"><button>See my previous rides</button></a>
-            </article>
-        </div>
-
-
-        <div class="x fade-in from-left" id="developer">
-            <article class="more">
-                <p>As for web development, I work in HTML, CSS and Javascript, but I'm continuously learning Python. My projects are published on GitHub and Onlinity.</p>
-                <div class="buttons">
-                    <a href="https://github.com/onlinity" target="_blank"><button>Visit my Github profile</button></a>
-                    <a href="https://onlinity.github.io" target="_blank"><button>See my projects on Onlinity</button></a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-particles" id="heroParticles"></div>
+            <div class="hero-content">
+                <h1>Pavle Ignjatović</h1>
+                <p>Student • Developer • Cyclist • Photographer</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="btn btn-primary">Explore</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
-            </article>
-        </div>
-
-        <div class="x fade-in from-right" id="blog"> 
-            <article class="more">
-                <img src="images/Learning logo.svg" alt="Onlinity Learning">
-                <p>I also write interesting articles about nature, science and world on my new website - <b>Onlinity Learning</b>.</p>
-                <a href="https://onlinity.github.io/learning/" target="_blank"><button>Check out Onlinity Learning</button></a>
-            </article>
-        </div>
-
-        <div class="x fade-in from-left" id="more">
-            <article class="more">
-                <div>
-                    <p>I also like playing chess, either live or online, and hope to get better after every game played.</p>
-                    <a href="https://www.chess.com/member/pavleignjatovic" target="_blank"><button>Let's play chess!</button></a>
-                    <img src="images/chess.png">
-                </div>
-                <div>
-                    <p>When in nature, I relish capturing great moments by photographing.</p>
-                    <a href="gallery/" target="_blank"><button>My photography</button></a>
-                    <img src="images/photo.jpg">
-                </div>
-            </article>
-        </div>
-
-        <div class="x fade-in from-right" id="contact">
-            <form action="https://formsubmit.co/pavle.ignjatovic.08@gmail.com" method="POST">
-                <h2>Contact me</h2>
-                <input type="text" name="name" required placeholder="Your name">
-                <input type="email" name="email" required placeholder="Your email">
-                <textarea name="message" cols="30" rows="10" required placeholder="Your message"></textarea>
-                <input type="hidden" name="_subject" value="New mail from ignjatovicpavle.github.io">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="https://ignjatovicpavle.github.io/#contact">
-                <button type="submit">Send message</button>
-            </form>
-        </div>
-        
-        <footer>
-            <div class="media">
-                <a href="https://ignjatovicpavle.github.io/"><i class="fa-solid fa-user fa-flip" style="--fa-animation-duration: 2s;"></i></a>
-                <a target="_blank" href="mailto:pavle.ignjatovic.08@gmail.com" title="pavle.ignjatovic.08@gmail.com"><i class="fa-solid fa-envelope fa-flip" style="--fa-animation-duration: 2s;"></i></a>
             </div>
-            <p>Copyright © 2024 Pavle Ignjatović, Onlinity</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hi, I'm Pavle</h3>
+                    <p>I'm a 16-year-old Mathematical Grammar School student from Belgrade, Serbia, with a passion for science, technology, and outdoor activities.</p>
+                    <p>I enjoy participating in physics, mathematics, astronomy and IT competitions, constantly challenging myself to learn and grow.</p>
+                    <p>When I'm not studying or coding, you can find me cycling through beautiful landscapes or capturing moments with my camera.</p>
+                    <!---<a href="#" class="btn btn-primary">My Achievements</a>--->
+                </div>
+                <div class="about-image floating">
+                    <img src="./images/ijso4.jpg" alt="Pavle Ignjatović">
+                </div>
+            </div>
+        </section>
+
+        <!-- Interests Section -->
+        <section id="dev" class="grid">
+            <div class="section-title">
+                <h2>Web Development</h2>
+                <a href="#contact" class="btn btn-primary">Contact me</a>
+            </div>
+            <div class="interests-grid">
+                <!-- Science Card -->
+                <div class="interest-card" id="science-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="onlinity">
+                    <div class="interest-content">
+                        <h3>Onlinity</h3>
+                        <p>My first web development project, featuring variety of different small programs I made when I needed them.</p>
+                        <a href="https://onlinity.github.io/" class="btn btn-outline">Visit Onlinity</a>
+                    </div>
+                </div>
+
+                <!-- Cycling Card -->
+                <div class="interest-card delay-1" id="cycling-card">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0aWNsZXxlbnwwfHwwfHx8MA%3D%3D" alt="onlinity_learning">
+                    <div class="interest-content">
+                        <h3>Onlinity Learning</h3>
+                        <p>Interesting short articles about our fascinating world and technology. Do you know how keyboard works? What happens in the ATC? If not, learn it on Onlinity Learning!</p>
+                        <a href="https://onlinity.github.io/learning/" class="btn btn-outline">Learn with Onlinity Learning</a>
+                    </div>
+                </div>
+
+                <!-- Programming Card -->
+                <div class="interest-card delay-2" id="programming-card">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="science">
+                    <div class="interest-content">
+                        <h3>Guide to IJSO</h3>
+                        <p>Comming soon: Guide to IJSO, from a group of former olympiad medalists to the future champions.</p>
+                        <a href="#" class="btn btn-outline btn-commingSoon">Comming soon...</a>
+                        <!---<div class="btn-group">
+                            <a href="#" class="btn btn-outline">GitHub</a>
+                            <a href="#" class="btn btn-outline">Projects</a>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Photography Section -->
+        <section id="photography" class="projects">
+            <div class="section-title">
+                <h2>Photography</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image double-image floating delay-2">
+                    <img src="gallery/photos/IMG_20240503_154801.jpg" alt="gallery">
+                    <img src="gallery/photos/Feb14 (4)_resized.jpg" alt="">
+                </div>
+                <div class="about-text">
+                    <h3>From mountains, across cities, to the sea...</h3>
+                    <p>As an amateur photographer, I love capturing great moments from outdoor adventures and ordinary life.</p>
+                    <p>You can see my work in the digital gallery:</p>
+                    <a href="./gallery/index.html" class="btn btn-primary">My gallery</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="cycling" class="projects">
+            <div class="section-title">
+                <h2>Cycling</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image floating">
+                    <img src="./gallery/photos/IMG_20231008_130736.jpg" alt="cycling">
+                </div>
+                <div class="about-text">
+                    <h3>Through the plains into the hills...</h3>
+                    <p>Cycling is what gets me anywhere. I travel on two wheels in the fields of Branicevo district and busy streets of the capital.</p>
+                    <p>I plan the routes on Komoot, and all my adventures are recorded on Strava.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary" id="komootLink">My rides on Komoot</a>
+                        <a href="#" class="btn btn-primary" id="stravaLink">Let's meet on Strava!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+            </div>
+            <form class="contact-form" action="https://formsubmit.co/pavle.ignjatovic.08@gmail.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="social-links">
+                <a href="https://ignjatovicpavle.github.io/"><i class="fas fa-user"></i></a>
+                <a href="mailto:pavle.ignjatovic.08@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://x.com/ignjatovic_p"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.strava.com/athletes/106970662"><i class="fa-brands fa-strava"></i></a>
+                <a href="https://www.linkedin.com/in/pavle-ignjatovic/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">Copyright © 2025 Pavle Ignjatović</p>
         </footer>
-
-
-
-
-
-
-        <!--Background image-->
-
-        <img src="images/background.png" id="bg">
-
-        <svg width="919" height="210" viewBox="0 0 919 210" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_2_23)">
-            <path d="M7.32 206V9.99999H87.96C105.32 9.99999 120.16 12.8 132.48 18.4C144.987 24 154.6 32.0267 161.32 42.48C168.04 52.9333 171.4 65.3467 171.4 79.72C171.4 94.0933 168.04 106.507 161.32 116.96C154.6 127.413 144.987 135.44 132.48 141.04C120.16 146.64 105.32 149.44 87.96 149.44H27.48L43.72 132.36V206H7.32ZM43.72 136.28L27.48 118.64H86.28C102.333 118.64 114.373 115.28 122.4 108.56C130.613 101.653 134.72 92.04 134.72 79.72C134.72 67.2133 130.613 57.6 122.4 50.88C114.373 44.16 102.333 40.8 86.28 40.8H27.48L43.72 22.88V136.28ZM170.186 206L258.386 9.99999H294.226L382.706 206H344.626L268.746 29.32H283.306L207.706 206H170.186ZM210.786 160.64L220.586 132.08H326.426L336.226 160.64H210.786ZM455.202 206L369.522 9.99999H409.002L485.442 187.24H462.762L540.042 9.99999H576.442L491.042 206H455.202ZM597.125 206V9.99999H633.525V175.2H736.005V206H597.125ZM798.342 91.48H895.782V121.44H798.342V91.48ZM801.142 175.48H911.742V206H764.742V9.99999H907.822V40.52H801.142V175.48Z" fill="#B0B0B0" fill-opacity="0.07" shape-rendering="crispEdges"/>
-            </g>
-            <defs>
-            <filter id="filter0_d_2_23" x="0.320007" y="-1.52588e-05" width="918.422" height="210" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dy="-3"/>
-            <feGaussianBlur stdDeviation="3.5"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_23"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_23" result="shape"/>
-            </filter>
-            </defs>
-        </svg>
-
-
-
-
-
-
     </main>
+    
 </body>
 </html>

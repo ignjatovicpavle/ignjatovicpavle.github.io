@@ -1,8 +1,0 @@
-physics - <i class="fa-solid fa-atom"></i>
-math - <i class="fa-solid fa-square-root-variable"></i>
-IT - <i class="fa-solid fa-code"></i>
-chemistry - <i class="fa-solid fa-flask"></i>
-finance - <i class="fa-solid fa-building-columns"></i>
-award - <i class="fa-solid fa-award"></i>
-cap - <i class="fa-solid fa-graduation-cap"></i>
-school - <i class="fa-solid fa-school"></i>
