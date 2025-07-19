@@ -9,6 +9,7 @@
     <meta name="description" content="Welcome to my gallery!">
     <link rel="stylesheet" href="style.css">
     <link id="preloadstyle" rel="stylesheet" href="../preload.css">
+    <link rel="stylesheet" href="../navigation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -38,7 +39,25 @@
 
     <main id="main" style="opacity: 0; display: none;">
 
-        <div class="all">
+        <nav id="navbar">
+            <a href="../" class="nav-logo">Pavle Ignjatović</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times close-menu" id="closeMenu"></i>
+                <i class="fa-solid fa-lightbulb" id="themeToggle"></i>
+                <a href="../index.html#about">About</a>
+                <a href="../index.html#dev">Developer</a>
+                <a href="../index.html#photography">Photographer</a>
+                <a href="../index.html#cycling">Cyclist</a>
+                <a href="../index.html#contact">Contact</a>
+                <div class="langchng">
+                    <a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="French"></a>
+                    <a href="#"><img src="https://flagcdn.com/w20/rs.png" alt="Serbian"></a>
+                </div>
+            </div>
+            <i class="fas fa-bars hamburger" id="hamburger"></i>
+        </nav>
+
+        <div class="title">
             <a href="https://ignjatovicpavle.github.io/"><h1>My gallery</h1></a>
         </div>
 
@@ -82,7 +101,6 @@
 
             <hr data-content="2024">
             <div class="gallery" id="gallery_2024">
-                <div class="imagediv"><img src="photos/IMG_20240629_194122.jpg"></div>
                 <div class="imagediv"><img src="photos/IMG_20240505_171515.jpg"></div>
                 <div class="imagediv"><img src="photos/IMG_20240505_140823.jpg"></div>
                 <div class="imagediv"><img src="photos/IMG_20240505_124011.jpg"></div>
@@ -195,30 +213,6 @@
             </div>
 
         </section>
-
-        <nav>
-            <div class="navlinks" id="navLinks">
-                <i class="fa fa-times" onclick="hidemenu()" style="color: white;"></i>
-                <div class="langchng" id="langchng">
-                    <a href="https://ignjatovicpavle.github.io/fr/"><img src="../images/france.png"></a>
-                    <a href="https://ignjatovicpavle.github.io/sr/"><img src="../images/serbia.png"></a>
-                </div>
-                <ul>
-                    <li><a href="../index.html#student" onclick="hidemenu()">// STUDENT</a></li>
-                    <li><a href="../index.html#cyclist" onclick="hidemenu()">// CYCLIST</a></li>
-                    <li><a href="../index.html#developer" onclick="hidemenu()">// DEVELOPER</a></li>
-                    <li><a href="../index.html#blog" onclick="hidemenu()">// EDITOR</a></li>
-                    <li><a href="../index.html/#more" onclick="hidemenu()">// AND MORE</a></li>
-                    <li><a href="../index.html#contact" onclick="hidemenu()">Contact me</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showmenu()"></i>
-        </nav>
-
-        
-
-
-
         
         <footer>
             <p>Hi, I'm Pavle, high school student from Serbia. I'm interested in physics, programming, cycling and chess. Apart from that, I like photography and this is my gallery.</p>
