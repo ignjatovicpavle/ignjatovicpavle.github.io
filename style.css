@@ -439,6 +439,19 @@ section {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.a_regular{
+    text-decoration: none;
+    color: var(--text);
+    cursor: pointer;
+}
+
+.a_italic{
+    text-decoration: none;
+    color: var(--text);
+    font-style: italic;
+    cursor: pointer;
+}
+
 /* Footer */
 footer {
     background: var(--light);
